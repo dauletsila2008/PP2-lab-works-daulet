@@ -3,15 +3,10 @@ n = int(input())
 if n < 2:
     print("No")
 else:
-    is_prime = True
-    i = 2
-    while i * i <= n:
+    for i in range(2, n):
         if n % i == 0:
-            is_prime = False
+            print("No")
             break
-        i += 1
-
-    if is_prime:
-        print("Yes")
     else:
-        print("No")
+        print("Yes")
+

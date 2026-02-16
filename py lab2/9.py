@@ -1,17 +1,18 @@
 n = int(input())
-a = input().split()
+a = list(map(int, input().split()))
 
-mn = int(a[0])
-mx = int(a[0])
+mn = a[0]
+mx = a[0]
 
 for i in range(1, n):
-    x = int(a[i])
-    if x < mn:
-        mn = x
-    if x > mx:
-        mx = x
+    if a[i] < mn:
+        mn = a[i]
+    if a[i] > mx:
+        mx = a[i]
 
 for i in range(n):
-    if int(a[i]) == mx:
-        a[i] = str(mn)
-print(' '.join(a))
+    if a[i] == mx:
+        a[i] = mn
+
+print(*a)
+
