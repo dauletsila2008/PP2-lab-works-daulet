@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "daulet",
+        "email": "d@mail.ru",
+        "birthday": "2000-10-10",
+        "group": null,
+        "phones": []
+    }
+]
